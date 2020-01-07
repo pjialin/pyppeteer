@@ -55,15 +55,15 @@ test_requirements = [
 ]
 
 setup(
-    name='pyppeteer',
-    version='0.0.25',
+    name='pyppeteer-box',
+    version='0.0.26',
     description=('Headless chrome/chromium automation library '
                  '(unofficial port of puppeteer)'),
     long_description=readme,
 
     author="Hiroyuki Takagi",
     author_email='miyako.dev@gmail.com',
-    url='https://github.com/miyakogi/pyppeteer',
+    url='https://github.com/pjialin/pyppeteer',
 
     packages=packages,
     package_dir=package_dir,

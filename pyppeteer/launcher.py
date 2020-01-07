@@ -58,7 +58,7 @@ DEFAULT_ARGS = [
 ]
 
 AUTOMATION_ARGS = [
-    '--enable-automation',
+    # '--enable-automation',
     '--password-store=basic',
     '--use-mock-keychain',
 ]
