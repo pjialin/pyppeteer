@@ -20,8 +20,9 @@ logger = logging.getLogger(__name__)
 
 DOWNLOADS_FOLDER = Path(__pyppeteer_home__) / 'local-chromium'
 DEFAULT_DOWNLOAD_HOST = 'https://storage.googleapis.com'
+DEFAULT_DOWNLOAD_HOST_CN = 'https://cdn.npm.taobao.org/dist'
 DOWNLOAD_HOST = os.environ.get(
-    'PYPPETEER_DOWNLOAD_HOST', DEFAULT_DOWNLOAD_HOST)
+    'PYPPETEER_DOWNLOAD_HOST', DEFAULT_DOWNLOAD_HOST_CN)
 BASE_URL = f'{DOWNLOAD_HOST}/chromium-browser-snapshots'
 
 REVISION = os.environ.get(

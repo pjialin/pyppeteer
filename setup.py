@@ -34,12 +34,7 @@ else:
 readme_file = path.join(basedir, 'README.md')
 with open(readme_file) as f:
     src = f.read()
-
-try:
-    from m2r import M2R
-    readme = M2R()(src)
-except ImportError:
-    readme = src
+readme = src
 
 requirements = [
     'pyee',
@@ -60,6 +55,7 @@ setup(
     description=('Headless chrome/chromium automation library '
                  '(unofficial port of puppeteer)'),
     long_description=readme,
+    long_description_content_type="text/markdown",
 
     author="Hiroyuki Takagi",
     author_email='miyako.dev@gmail.com',
